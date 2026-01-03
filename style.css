@@ -18,6 +18,10 @@ nav {
 section {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav .logo {
@@ -59,7 +63,7 @@ nav .navList {
 .navList li a:hover::after {
   width: 100%;
 }
-
+/* End of Nav Bar */
 .hero {
   width: 100%;
   position: relative;
@@ -161,6 +165,7 @@ nav .navList {
   padding: 304px 141px;
   gap: 84px;
   background: #f8fafc;
+  flex-direction: row;
 }
 
 .about img {
@@ -196,11 +201,13 @@ nav .navList {
 }
 
 .about .right li {
-  font-family: "poppins";
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 20px;
   color: #0f172a;
 }
+
+/* end of about section */
 
 .gallery {
   background-color: #f8fafc;
@@ -209,6 +216,23 @@ nav .navList {
   align-items: center;
   flex-direction: column;
   padding: 64px;
+}
+.gallery h4 {
+  color: #64748b;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 53px;
+}
+
+.gallery h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 62px;
+  color: #0f172a;
 }
 
 .gallery .workSection {
@@ -228,4 +252,46 @@ nav .navList {
 
 .gallery .workSection img:hover {
   transform: scale(1.025);
+}
+
+/* end of gallery section */
+
+/* end of why sections */
+
+.contact {
+  width: 100%;
+  height: 70vh;
+  background: #f8fafc;
+}
+
+footer {
+  background-color: #0f172a;
+  width: 100%;
+  height: 30vh;
+  padding: 39px 71px;
+}
+
+.footerLogo {
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  text-align: start;
+}
+
+.footerLogo h1 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 128px;
+  margin-bottom: -19px;
+}
+
+.footerLogo h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+}
+
+footer p {
+  text-align: center;
+  color: #f8fafc;
+  margin-top: 16px;
 }
