@@ -223,7 +223,7 @@ nav .navList {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1px;
-  margin-bottom: 53px;
+  margin-bottom: 13px;
 }
 
 .gallery h1 {
@@ -262,6 +262,60 @@ nav .navList {
   width: 100%;
   height: 70vh;
   background: #f8fafc;
+}
+
+.contactContent {
+  display: flex;
+  margin-top: 15px;
+}
+
+.contact h4 {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #64748b;
+}
+
+.contact h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.left .infoCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.infoCard h3 {
+  width: 191px;
+  color: #111827;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+}
+
+.infoCard p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: #334155;
+  width: 294px;
+}
+
+.right iframe {
+  width: 500px;
+  height: 350px;
+  border-radius: 12px;
+  margin-left: 60px;
 }
 
 footer {
