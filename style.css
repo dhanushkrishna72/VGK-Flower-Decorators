@@ -5,6 +5,10 @@
   box-sizing: border-box;
   text-transform: uppercase;
 }
+body,
+section {
+  overflow-x: hidden;
+}
 
 nav {
   display: flex;
@@ -155,14 +159,14 @@ nav .navList {
 }
 
 /* End of hero Section */
-
 .about {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 160px 141px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 304px 141px;
   gap: 84px;
   background: #f8fafc;
   flex-direction: row;
@@ -480,3 +484,584 @@ footer p {
   color: #f8fafc;
   margin-top: 16px;
 }
+
+/* ================= HERO RESPONSIVE FIX ONLY ================= */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .logo {
+    font-family: "Poller One", sans-serif;
+  }
+  nav ul > li {
+    display: none;
+  }
+  .hero {
+    height: 90vh; /* critical */
+    min-height: 90vh; /* keeps hero feel */
+    padding: 48px 16px; /* breathing space */
+  }
+
+  .hero .main {
+    padding: 0 12px;
+  }
+
+  .hero .mainText {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .hero .subText {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+/* Small phones (iPhone mini safe) */
+@media (max-width: 480px) {
+  nav {
+    font-family: "Poller One", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .logo {
+    font-family: "Poller One", sans-serif;
+  }
+  nav ul > li {
+    display: none;
+  }
+  .hero {
+    min-height: auto;
+    padding: 40px 16px;
+  }
+
+  .hero .mainText {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .hero .cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ================= ABOUT RESPONSIVE OVERRIDES ================= */
+
+/* Large tablets and below */
+@media (max-width: 1024px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about {
+    height: auto;
+    padding: 160px 64px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 520px; /* keeps visual balance */
+    height: auto;
+  }
+
+  .about .right {
+    max-width: 100%;
+  }
+
+  .about .right h2 {
+    width: auto; /* prevent overflow */
+    font-size: 32px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about {
+    padding: 120px 32px;
+    gap: 48px;
+  }
+
+  .about .right h2 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .about .right p,
+  .about .right li {
+    font-size: 17px;
+  }
+}
+
+/* Small phones (iPhone mini safe) */
+@media (max-width: 480px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about {
+    padding: 80px 16px;
+  }
+
+  .about img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .about .right h2 {
+    font-size: 24px;
+  }
+
+  .about .right p,
+  .about .right li {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+/* ================= SERVICES RESPONSIVE FIX ================= */
+
+/* Tablets & below */
+@media (max-width: 1024px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services h1 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .services p {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 12px;
+  }
+
+  .cardSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+    row-gap: 40px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardSection {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .card .cardPara {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .services p {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .cardSection {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about {
+    flex-direction: column;
+    padding: 80px 24px;
+    height: auto;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about .right h2 {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* =========================
+   GALLERY RESPONSIVE FIX
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .gallery .workSection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .gallery {
+    padding: 48px 24px;
+  }
+
+  .gallery h1 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .gallery .workSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .gallery {
+    padding: 32px 16px;
+  }
+
+  .gallery h4 {
+    font-size: 16px;
+  }
+
+  .gallery h1 {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .gallery .workSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Safety: prevent horizontal overflow */
+.gallery,
+.gallery .workSection {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================
+   WHY SECTION RESPONSIVE FIX
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .whyCards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 100px;
+  }
+  .whyCard img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .whyCards .whyCard {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .why {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+
+  .why h1,
+  .why h4 {
+    text-align: center;
+  }
+
+  .whyCards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+  .whyCards .whyCard {
+    width: 100%;
+    max-width: none;
+  }
+
+  .whyCard img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .whyCard .whyPara {
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .why {
+    padding: 32px 16px;
+  }
+  .whyCard img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .why h1 {
+    font-size: 26px;
+  }
+
+  .why h4 {
+    font-size: 14px;
+  }
+
+  .whyCards {
+    gap: 32px;
+  }
+
+  .whyCard {
+    padding: 16px;
+  }
+}
+
+/* =========================
+   CONTACT SECTION RESPONSIVE FIX
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .right iframe {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+  }
+
+  .left .infoCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .infoCard h3,
+  .infoCard p {
+    font-size: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 24px;
+    height: auto;
+  }
+
+  .contact h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .left .infoCard {
+    width: 100%;
+  }
+
+  .right iframe {
+    height: 250px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 24px;
+  }
+
+  .contact h4 {
+    font-size: 14px;
+  }
+
+  .left .infoCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .infoCard h3 {
+    font-size: 18px;
+  }
+
+  .infoCard p {
+    font-size: 14px;
+  }
+
+  .right iframe {
+    height: 200px;
+  }
+}
+
+/* =========================
+   FOOTER RESPONSIVE FIX
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  footer {
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerLogo {
+    text-align: center;
+  }
+
+  .footerLogo h1 {
+    font-size: 100px;
+  }
+
+  .footerLogo h4 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  footer {
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerLogo {
+    text-align: center;
+  }
+  .footerLogo h1 {
+    font-size: 72px;
+    margin-bottom: -12px;
+  }
+
+  .footerLogo h4 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  footer {
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerLogo {
+    text-align: center;
+  }
+
+  .footerLogo h1 {
+    font-size: 48px;
+    margin-bottom: -8px;
+  }
+
+  .footerLogo h4 {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
+
+/* finally here comes an end, this project is designed and developed by dhanush k(aka matrix at Hadhaan). For any projects like this reach out to me through hadhaan.com will be waiting. */
