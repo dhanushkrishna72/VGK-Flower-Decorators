@@ -209,6 +209,69 @@ nav .navList {
 
 /* end of about section */
 
+.services h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 32px;
+  color: #0f172a;
+  letter-spacing: 1px;
+}
+
+.services p {
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #334155;
+  text-align: center;
+  width: 600px;
+}
+
+.cardSection {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 116px;
+  row-gap: 27px;
+  margin-top: 60px;
+}
+
+.card {
+  width: 290px;
+  height: 287px;
+  padding: 24px;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.card .cardTitle {
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #0f172a;
+  text-wrap: wrap;
+  text-align: left;
+}
+
+.card .cardPara {
+  width: 243px;
+  height: auto;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #334155;
+  line-height: 16px;
+}
+
+/* end of services section */
 .gallery {
   background-color: #f8fafc;
   display: flex;
@@ -260,6 +323,22 @@ nav .navList {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.why h4 {
+  color: #64748b;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.why h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #0f172a;
 }
 
 .whyCards {
