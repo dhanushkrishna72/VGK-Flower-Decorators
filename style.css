@@ -256,6 +256,58 @@ nav .navList {
 
 /* end of gallery section */
 
+.why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whyCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 100px;
+  margin-top: 150px;
+}
+
+.whyCards .whyCard {
+  width: 348px;
+  height: auto;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  transform: translateZ(0);
+}
+
+.whyCards .whyCard:hover {
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+.whyCard img {
+  width: 282px;
+  height: 244px;
+  object-fit: cover;
+}
+
+.whyCard .whyTitle {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.whyCard .whyPara {
+  width: 300px;
+  color: #334155;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 /* end of why sections */
 
 .contact {
