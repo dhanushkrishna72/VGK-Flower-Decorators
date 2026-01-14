@@ -6,7 +6,7 @@ This project is a professional landing page website designed for **VGK Flower De
 The primary goal of the website is to establish a strong online presence, showcase decoration work, and generate direct customer inquiries.
 
 The website focuses on a **clean, elegant, and business-first design**, suitable for wedding and event services.
-
+ABOUT TO LUANCH THIS..!!!
 ---
 
 ## 🎯 Objectives
